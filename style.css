@@ -1260,11 +1260,14 @@
         }
 
         .footer-top {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 40px;
         }
 
         .footer-brand-col {
-          grid-column: span 1;
+          grid-column: span 2;
+          align-items: center;
+          text-align: center;
         }
 
         .card-footer-metrics {
@@ -1430,17 +1433,20 @@
 
         .footer-meta-row {
           flex-direction: column;
-          align-items: flex-start;
-          gap: 12px;
+          align-items: center;
+          text-align: center;
+          gap: 16px;
           font-size: 12px;
         }
 
         .footer-social-links {
           gap: 16px;
+          justify-content: center;
         }
 
         .footer-legal-disclaimer {
           font-size: 11px;
+          text-align: center;
         }
       }
 
