@@ -37,7 +37,7 @@ This is the **pre-launch teaser / coming soon** landing page for GIG, designed t
 
 ### Design System
 
-The page follows a custom design system inspired by the black/white duality aesthetic:
+The page follows a custom design system built on a bold black/white duality aesthetic:
 
 | Token | Value | Usage |
 |-------|-------|-------|
@@ -54,9 +54,8 @@ Typography uses **DM Sans** (headlines, weight 700, line-height ≤ 0.96) and **
 
 ## 🛠️ Tech Stack
 
-- **Pure HTML + CSS + Vanilla JS** — single self-contained file, zero dependencies
+- **HTML + CSS + Vanilla JS** — no frameworks, no bundlers, zero dependencies
 - **No build tools** — just open `index.html` in a browser
-- **No frameworks** — no React, no Tailwind, no bundlers
 - **Google Fonts** — DM Sans + Inter loaded via CDN
 
 ---
@@ -92,7 +91,9 @@ No `npm install`. No `npm run build`. Just open the file.
 
 ```
 gig_launch_page/
-├── index.html      # Complete landing page (HTML + CSS + JS)
+├── index.html      # Page markup and structure
+├── style.css       # All styles — design tokens, components, responsive breakpoints
+├── script.js       # Waitlist form logic, email validation, mobile menu
 ├── gig-logo.png    # GIG wordmark logo (green)
 └── README.md       # This file
 ```
